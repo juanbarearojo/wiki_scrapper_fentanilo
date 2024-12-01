@@ -17,6 +17,24 @@
 
 The **Wikipedia Scraper and Network Generator** is a Python-based tool designed to crawl Wikipedia articles, extract meaningful textual data, and construct comprehensive networks of words, bigrams, and hyperlinks. By analyzing the co-occurrence of words and the structure of Wikipedia's internal links, this tool provides valuable insights into the relationships and significance of terms within a specific domain.
 
+## Repository Structure
+
+The repository structure includes a `data/` directory where the results of the analysis are stored in CSV and TXT formats. These files are ready to be used or processed by other users. Below is a description of the contents:
+
+### Directory Structure
+
+- **`data/links_edges.csv`**: Contains the edges of the hyperlink network.
+- **`data/links_nodes.csv`**: Contains the nodes of the hyperlink network.
+- **`data/nodos_visitados.txt`**: A list of all the nodes (Wikipedia articles) visited during the scraping process.
+- **`data/words_bigrams_edges.csv`**: Contains the edges of the word and bigram network.
+- **`data/words_bigrams_nodes.csv`**: Contains the nodes of the word and bigram network.
+
+
+### Open Data
+
+All files in the `data/` directory are open for use. You can utilize them directly for additional analysis, data visualization, or any other task. Feel free to explore and contribute with new insights or improvements.
+
+
 ## Features
 
 - **Web Scraping**: Efficiently crawls Wikipedia articles up to a specified depth and number of articles.
