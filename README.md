@@ -70,7 +70,7 @@ Install the required Python libraries using `pip`:
 
 ```bash
 pip install -r requirements.txt
-```
+
 ```
 
 ### Download SciSpaCy Model
