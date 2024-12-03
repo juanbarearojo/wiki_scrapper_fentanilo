@@ -452,16 +452,16 @@ def main():
 
         # Exportar la red de palabras y bigramas
         print("\nExportando la red de palabras y bigramas...")
-        export_graph(G_words, "data/words_bigrams_nodes.csv", "data/words_bigrams_edges.csv", graph_type='word_bigram')
+        export_graph(G_words, "data/words/words_bigrams_nodes.csv", "data/words/words_bigrams_edges.csv", graph_type='word_bigram')
 
         # Exportar la red de hipervínculos
         print("\nExportando la red de hipervínculos...")
-        export_graph(G_links, "data/links_nodes.csv", "data/links_edges.csv", graph_type='link')
+        export_graph(G_links, "data/links/links_nodes.csv", "data/links/links_edges.csv", graph_type='link')
 
         print("\n=== Exportación Completada ===")
-        print(f"- Nodos y Aristas de palabras y bigrams guardados en: data/words_bigrams_nodes.csv, data/words_bigrams_edges.csv")
-        print(f"- Nodos de hipervínculos guardados en: data/links_nodes.csv")
-        print(f"- Aristas de hipervínculos guardadas en: data/links_edges.csv")
+        print(f"- Nodos y Aristas de palabras y bigrams guardados en: data/words/words_bigrams_nodes.csv, data/words/words_bigrams_edges.csv")
+        print(f"- Nodos de hipervínculos guardados en: data/links/links_nodes.csv")
+        print(f"- Aristas de hipervínculos guardadas en: data/links/links_edges.csv")
 
     except Exception as e:
         print(f"Ocurrió un error inesperado: {e}")
